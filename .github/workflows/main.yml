@@ -16,8 +16,8 @@ jobs:
         with:
           flutter-version: '3.19.0'
 
-      # این خط جادویی پوشه اندروید رو از ریشه کاملاً سالم و نو میسازه
-      - run: flutter create --platforms android .
+      # ساخت پروژه با نام استاندارد و بدون خط تیره
+      - run: flutter create --project-name=gard_config_scanner --platforms android .
 
       - run: flutter pub get
       - run: flutter build apk --release
