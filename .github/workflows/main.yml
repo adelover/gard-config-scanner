@@ -16,6 +16,9 @@ jobs:
         with:
           flutter-version: '3.19.0'
 
+      # این خط جادویی پوشه اندروید رو از ریشه کاملاً سالم و نو میسازه
+      - run: flutter create --platforms android .
+
       - run: flutter pub get
       - run: flutter build apk --release
 
